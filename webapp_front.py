@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     now=datetime.now()
-    current_time=now.strftime("%H:%M")
+    current_time=now.strftime("%H:%M:%S")
     return "Hi there, the time is " + current_time
 
 if __name__ == "__main__":
